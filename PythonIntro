@@ -1,0 +1,38 @@
+print("Hello World")
+  2 myFirstVariable = "Hello Variable"
+  3 print(myFirstVariable)
+  4 
+  5 newInt = 21
+  6 newFloat = 2.1
+  7 
+  8 print("newInt")
+  9 print(newInt)
+ 10 
+ 11 print(myFirstVariable + str(newInt))
+ 12 //typecasting
+ 13 //ALL DATATYPES IN PYTHON CAN BE TYPECAST - float(),bool(),int(),char(),str(),list(),tuple(),dict(),set(), etc
+ 14 myFirstVariable = "I have been changed, because I'm mutable!"
+ 15 //IF RETURNING SAME LIST, MODIFY GIVEN LIST, THIS WILL BE VERIFIED BY MEMORY ID
+ 16 print(myFirstVariable)
+ 17 myList = ["my, "list"]
+ 18 print(id(myList))
+ 19 myList.append('new stuff')
+ 20 //append adds to list
+ 21 print(id(myList))
+ 22 myList[1]
+ 23 //this prints "list", not "my", because first index value is 0
+ 24 popKorn = myList.pop()
+ 25 print(popKorn)
+ 26 //this will print "new stuff", that last value is "popped off" of the list, meaning it is deleted
+ 27 myList[-1]
+ 28 //this will return last item of list, rather than popping off item, and -2 would return second last item, and so on
+ 29 tuple(myList)
+ 30 //tuple is an immutable list annotated by parenthesis
+ 31 myBool = True
+ 32 myBool = False
+ 33 wrongBool = true
+ 34 wrongBool = false
+ 35 
+ 36 //ssh -X student@10.50.41.179
+ 37 //HOW TO ssh to vta box
+ 38 //terminator
