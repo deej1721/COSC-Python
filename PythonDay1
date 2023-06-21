@@ -58,3 +58,30 @@ joined.split('.')
          print('buzz')
     else:
          print(num)
+    // FOR LOOPS
+      myStr = "The missile knows where it is because it knows where it isn't"
+      for i in myStr:
+          print(i)
+      // THIS PRINTS EACH CHARACTER IN THE STRING ON A NEW LINE
+      myNums = [10,20,30,40,50,100]
+      for i in myNums:
+          if i < 70:
+            print(f'{i} is a failing score!')
+    //THIS WILL PRINT THE SENTENCE FOR ALL BUT THE LAST NUMBER
+    // WHILE LOOPS
+        i = 0
+        while i <= 10:
+        print(i)
+        i += 1
+      
+// FUNCTIONS
+def myFunction():
+  pass
+// PASS IS A PLACEHOLDER AND DOES NOTHING
+def myFunction(a,b):
+  return (a*b)
+// RETURNS THE VALUE OF a*b, THE TWO LISTED PARAMETERS
+myFunction(12,10)
+// RETURNS 120, THE VALUE OF 12*10, BUT DOES NOT PRINT IT AS THAT WAS NOT INDICATED VIA print
+
+
