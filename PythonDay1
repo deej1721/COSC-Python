@@ -1,1 +1,30 @@
+//STRING MANIPULATION
+myStr = "The quick brown fox jumps over the lazy dog"
+myStr.split()
+This will be returned as 'The', 'quick', 'brown', etc, as the string has been SPLIT into a list
+' '.join(newStr)
+This will return the original sentence as the list was joined into a single string with ' ' as the delimeter 
+'delimeter'.join(anyString.split(':')[0:2])
+//USE split() RATHER THAN list() TO GET WORDS FROM STRINGS
 
+// F-STRINGS
+name = "Taylor"
+rank = "LCpl"
+class = "python"
+f'Hello {rank} {name}, you will be teaching {class} today'
+This will return 'Hello LCpl Taylor, you will be teaching python today'
+
+//INPUT
+name = input("What is your name?: ")
+print(f'Hello {name}') 
+// This will return 'Hello (whatever was input'
+
+// EXAMPLE
+myStr = "chesty.puller@usmc.mil"
+newStr = myStr.split('@')
+  'chesty.puller', 'usmc.mil'
+'.'.join(newStr)
+  chesty.puller.usmc.mil
+joined = '.'.join(newStr)
+joined.split('.')
+  'chesty', 'puller', 'usmc', 'mil'
