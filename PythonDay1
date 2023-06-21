@@ -120,6 +120,9 @@ def invert(l):
     l[counter] = str((255 - int(i)))
 
 def inverted(l):
+newList = []
+for i in l:
+newList.append(str(255-int(i)))
 
 if _name_ == '_main_':
   pass
