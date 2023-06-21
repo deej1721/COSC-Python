@@ -99,4 +99,27 @@ myRange[-5:]
 myRange[::-1]
 //REVERSES ORDER OF LIST
 
+// GUESS NUM SOLUTION
+def guess_number(n):
+  while True:
+    guess = int(input("Number:"))
+    if guess == n:
+      print("WIN")
+    break
+    elif guess < n:
+      print("TOO LOW")
+    else:
+      print("TOO HIGH")
+guess_number(23)
 
+// EX PE1/PART1 SOLUTIONS
+
+def invert(l):
+  counter = 0
+  for i in l:
+    l[counter] = str((255 - int(i)))
+
+def inverted(l):
+
+if _name_ == '_main_':
+  pass
