@@ -7,7 +7,7 @@ This will return the original sentence as the list was joined into a single stri
 'delimeter'.join(anyString.split(':')[0:2])
 //USE split() RATHER THAN list() TO GET WORDS FROM STRINGS
 
-// F-STRINGSand
+// F-STRINGS
 name = "Taylor"
 rank = "LCpl"
 class = "python"
@@ -40,7 +40,7 @@ joined.split('.')
    num = input("Pick a number: ")
    if int(num) < 42:
       print("TOO LOW")
-   elif int(num) > 42:
+   elif int(num) > 42:This will print all but the last number 
       print("TOO HIGH")
    elif int(num) == 69:
       print("EQUIVALENT!")
@@ -83,5 +83,20 @@ def myFunction(a,b):
 // RETURNS THE VALUE OF a*b, THE TWO LISTED PARAMETERS
 myFunction(12,10)
 // RETURNS 120, THE VALUE OF 12*10, BUT DOES NOT PRINT IT AS THAT WAS NOT INDICATED VIA print
+
+//RANGE
+range(0,10,1)
+//START, STOP, STEP CONCEPT - START AT 0, STOP AT 10, STEP BY 1
+range(0,10)[2]
+// RETURNS 2, AS THE [2] INDICATES THE THIRD INDEX VALUE
+list(range(0,10))
+//RETURNS [0,1,2,3,4,5,6,7,8,9]
+for i in range(0,8):
+//INDEX VALUE OF EIGHT BITS
+myRange = list(range(0,100))
+myRange[-5:]
+//LISTS LAST FIVE VALUES UNTIL END OF LIST
+myRange[::-1]
+//REVERSES ORDER OF LIST
 
 
