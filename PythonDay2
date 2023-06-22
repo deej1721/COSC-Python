@@ -76,3 +76,35 @@ for i in myStr:
 //THIS COUNTS OCCURENCES OF ALL CHARACTERS
 myDict['a']
 //THIS RETURNS THE TOTAL OCCURENCES OF THE SPECIFIED CHARACTER!
+
+//VARIABLE LENGTH ARGUMENTS
+
+def myFunct(*args):
+  product = 1
+  for i in args:
+    product = product * i 
+  return product
+print(myFunction(5,10,50,100))
+//RETURNS 250000, AS IT ITERATED THROUGH ALL PROVIDED ARGUMENTS
+
+//GENERAL NOTES
+- DO NOT DECLARE GLOBAL VARIABLES!!!
+
+//LAMBDAS (NON-TESTABLE)
+y = lambda x: x + 100
+print(y(1)) 
+//THIS WILL RETURN 101
+
+def incrementor(n):
+  return lambda x: x + n 
+fun = incrementor(42)
+print(fun(10))
+
+myList = [2,3,4,5]
+PRINT
+print(list(map(lambda x:x**2, myList)))
+//map() DOES FUNCTION ON LEFT TO ALL ITERABLES ON RIGHT
+//THIS PRINTS 4,9,16,25
+print(all(map(lambda x:x%2==0, myList)))
+//THIS RETURNS FALSE AS NOT ALL ELEMENTS IN myLIST ARE DIVISIBLE BY 2
+//all() FUNCTION ASSESSES true OR false OF ALL ON RIGHT
