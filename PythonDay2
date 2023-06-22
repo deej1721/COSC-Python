@@ -12,4 +12,21 @@ int('01100001', 2) (ARUMENTS ARE NUMBER, THEN BASE OF NUMBER SYSTEM - BINARY IS 
 //DECIMAL->ASCII
 chr(97) (RETURNS 'a')
 
-//chr(42) RETURNS '*', AN ASTERISK, OR WILDCARD VALUE
+//GENERAL NOTES
+chr(42) RETURNS '*', AN ASTERISK, OR WILDCARD VALUE
+
+
+//STEG EXERCISE NOTES
+def steg_encode_char(char, cover):
+  msgBin = format(ord(char, '0>8b')
+  for i in range(0,8):
+    coverBinL = list(format(int(cover[i]), '0>8b'))
+    coverBinL[-1] = msgBin[i]
+    //ASSIGNS FIRST ELEMENT OF msgBin TO LAST ELEMENT OF coverBinL
+    cover[i] = str(int''.join(coverBinL),2))
+
+def steg_decode_char(stego)
+  msgBits = []
+  for b in stego:
+    msgBits.append(bin(int(b))[-1])
+    return chr(int''.join(msgBits),2))
