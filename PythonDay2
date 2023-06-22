@@ -30,3 +30,49 @@ def steg_decode_char(stego)
   for b in stego:
     msgBits.append(bin(int(b))[-1])
     return chr(int''.join(msgBits),2))
+
+// READING AND WRITING TO FILES WITH PYTHON
+
+with open('myfile.txt','r') as fp:
+  pass
+//OPENS FILE AND CREATES fp OBJECT THAT EXISTS AS A "FILE POINTER"
+  print(fp.read())
+  //FILE BECOMES GIANT STRING
+  print(fp.readlines())
+  //FILE BECOMES A LIST OF LINES
+
+with open('myfile.txt','w') as fp:
+  fp.write("Writing hurts my hands\n")
+  //ACCEPTS STRINGS
+  fp.writelines(['each line \n', 'as an elemenet\n'])
+
+with open('myfile.txt','r') as fp0:
+  with open('newfile.txt', 'w') as fp1:
+    fp1.write(fp0.read())
+
+//SETS
+
+//DICTIONARIES
+//Have key-value pairs and a specific order
+//Order works like so: 'IndexPosition':'ValueAssociated', so you can only reference by IndexPosition
+myDict = {'E-1':'Pvt', 'E-2':'PFC', 'E-3':'LCpl', 'E-4':'Cpl'}
+myDict['E-1']
+myDict['E-5'] = 'Sgt'
+//THIS ADDS AN ELEMENT TO A LIST
+for i in myDict:
+  print(i)
+//RETURNS THE KEYS, NOT THE VALUES
+for i in myDict:
+  print(myDict[i])
+//RETURNS THE VALUES, NOT THE KEYS
+myStr = "Calling barry benson bee to the stand"
+myDict = {}
+//REINSTANTIATING THE DICTIONARY CLEARS IT OF ALL VALUES
+for i in myStr:
+  if i in myDict:
+    myDict[i] += 1
+  else:
+    myDict[i] = 1
+//THIS COUNTS OCCURENCES OF ALL CHARACTERS
+myDict['a']
+//THIS RETURNS THE TOTAL OCCURENCES OF THE SPECIFIED CHARACTER!
