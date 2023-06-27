@@ -219,6 +219,9 @@ OR
  15     return " ".join(l)
  16     pass
  17 
+INSTRUCTOR SOLUTION:
+return ' '.join(sentence.split()[::-1])
+return ' '.join(list(reversed(sentence.split())))
  18 def q2(n):
  19     '''
  20     Given a positive integer, return its string representation with
@@ -229,6 +232,8 @@ OR
  25     return ('{:,}'.format(n))
  26     pass
  27 
+INSTRUCTOR SOLUTION:
+SEE ABOVE!!!
  28 def q3(lst0, lst1):
  29     '''
  30     Given two lists of integers, return a sorted list that contains
@@ -241,6 +246,8 @@ OR
  37     return nlist
  38     pass
  39 
+INSTRUCTOR SOLUTION:
+return list(reversed(sorted(lst0 + lst1)))
  40 def q4(s1,s2,s3):
  41     '''
  42     Given 3 scores in the range [0-100] inclusive, return 'GO' if
@@ -252,6 +259,10 @@ OR
  48         return 'NOGO'
  49     pass
  50 
+INSTRUCTOR SOLUTION:
+SEE ABOVE! (INSTRUCTOR DID ASSIGN THE AVERAGE TO A VARIABLE HOWEVER)
+return ['NOGO', 'GO'][int(((s1+s2+s3)/3.00000000001)//50)]
+//DO NOT DO IT THIS WAY!!!
  51 def q5(integer, limit):
  52     '''
  53     Given an integer and limit, return a list of even multiples of the
@@ -266,6 +277,14 @@ OR
  62     return steve
  63     pass
  64 
+INSTRUCTOR SOLUTION:
+multiples[]
+for i in range(0,limit+1,integer):
+ if i % 2 == 0:
+  multiples.append(i)
+return multiples 
+OR 
+return [i for i in range(0, limit+1, integer) if i % 2 == 0
  65 def q6(f0, f1):
  66     '''
  67     Given two filenames, return a list whose elements consist of line numbers
@@ -282,6 +301,28 @@ OR
  78 
  79 
  80     pass
+INSTRUCTOR SOLUTION:
+diffs = []
+with open(f0, 'r') as fp0:
+ with open(f1, 'r') as fp1:
+  lines0 = fp0.readlines()
+  lines1 = fp1.readlines()
+  for c,i in enumerate(lines0):
+   if i != lines1[c]:
+    diffs.append(c)
+return diffs
+OR
+diffs = []
+with open(f0) as fp0:
+ with open(f1) as fp1:
+  lines0 = fp0.readlines()
+  lines1 = fp1.readlines()
+  c = 0
+  for i in lines0:
+   if i != lines1[c]:
+    diffs.append(c)
+   c += 1
+// C IS THE INDEX, I IS THE COUNTER!!! 
  81 def q7(lst):
  82     '''
  83     Return the first duplicate value in the given list.
@@ -295,6 +336,8 @@ OR
 91         st.add(i)
  92     pass
  93 
+INSTRUCTOR SOLUTION:
+SEE ABOVE!!!
  94 def q8(strng):
  95     '''
  96     Given a sentence as a string with words being separated by a single space,
@@ -303,6 +346,13 @@ OR
  99     return len(min(strng.split(), key=len))
 100     pass
 101 
+INSTRUCTOR SOLUTION:
+SEE ABOVE!!!
+smol = 100
+for i in strng.split():
+ if len(i) < smol:
+  smol = len(i)
+return smol
 102 def q9(strng):
 103     '''
 104     Given an alphanumeric string, return the character whose ascii value
@@ -321,6 +371,12 @@ OR
 117 
 118     pass
 119 
+INSTRUCTOR SOLUTION:
+myList = []
+ for i in strng:
+  if i.isnumeric():
+   myList.append(i)
+return chr(int(''.join(myList)))
 120 def q10(arr):
 121     '''
 122     Given a list of positive integers sorted in ascending order, return
@@ -334,7 +390,11 @@ OR
 130         i +=1
 131     return None
 132     pass
-                                                                   
+INSTRUCTOR SOLUTION:
+for i in range(0,len(arr)+1):
+ if arr[i]+1 != i+1:
+  return arr[i]
+return None
 
 
 
