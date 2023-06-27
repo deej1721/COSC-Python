@@ -419,6 +419,15 @@ return (5*x) + 10
 2*PI*r
 def diameter(radius):
  return 2*3.14*radius
+majoras_subnet_mask = 192.168.28.23
+majoras_subnet_mask.split('.')[-1]
+//RETURNS 23, THE LAST OCTET
+if int(majoras_subnet_mask.split('.')[-1]) in range(0,24):
+ print('Subnetted')
+if int(majoras_subnet_mask.split('.')[-1]) in range(25,128):
+ print('Subnetted')
+port_range = range(1000,1500)
+list(port_range)
 ------------------------------------------------------------------------------------------------------------------------
 GOOD LUCK!!!
 
