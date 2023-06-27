@@ -408,7 +408,19 @@ return None
 ------------------------------------------------------------------------------------------------------------------------
 GOOD LUCK!!!
 
+PRE-TEST NOTES:
 
+# e = mc**2; c is constant (lets just say 30000), m is 4.20
+IN THAT INSTANCE RETURN 4.20(30000**2)
+# y = mx + b; m is 5, b is 10, x is 15
+def slope(x):
+#y = mx + b, m is 5, b is 10, x is passed
+return (5*x) + 10
+2*PI*r
+def diameter(radius):
+ return 2*3.14*radius
+------------------------------------------------------------------------------------------------------------------------
+GOOD LUCK!!!
 
 
 
