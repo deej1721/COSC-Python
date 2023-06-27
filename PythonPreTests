@@ -428,6 +428,39 @@ if int(majoras_subnet_mask.split('.')[-1]) in range(25,128):
  print('Subnetted')
 port_range = range(1000,1500)
 list(port_range)
+myStr = input()
+yeet
+myStr
+'yeet2yeet4'
+for i in myStr:
+ if i.isnumeric():
+  print(i)
+first = 'rocky'
+middle = 'zh'
+last = 'wilson'
+domain = 'nsa'
+f'{first[0]}{middle[0]}{wilson[0:5]}@{domain}.gov'
+rzwilso@nsa.gov
+'{}{}{}{}.gov'.format(first[0],middle[0],last[0:5],domain)
+myEmail = rock.z.wilson@usmc.mil
+splitted = myEmail.split('@')
+joined = '.'.join(splitted)
+final = joined.split('.')
+final 
+['rocky','z','wilson','usmc','mil]
+tuple(final[:-1])
+['rocky','z','wilson','usmc]
+myStr = "Sometimes, I dream about cheese"
+myDict = []
+for i in myStr:
+ if i in myDict:
+  myDict[i] += 1
+ else:
+  myDict[i] = 1
+with open('myfile.txt','r') as fp0:
+ with open('newfile.txt','w') as fp1:
+  fp1.write(fp0.read())
+//COPYING ONE FILE TO ANOTHER!!!
 ------------------------------------------------------------------------------------------------------------------------
 GOOD LUCK!!!
 
